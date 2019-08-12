@@ -1,0 +1,10 @@
+Value PORT (\S+)
+Value LINK (hybrid|trunk|access)
+Value PVID (\S+)
+Value TRUNK (.*)
+
+Start
+  ^Port -> Begin
+
+Begin
+  ^(?=\s{0,9}${PORT}).{20}\s+${LINK}\s+${PVID}\s*${TRUNK}$$ -> Record
