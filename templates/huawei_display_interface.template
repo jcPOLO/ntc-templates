@@ -1,0 +1,6 @@
+Value PROTOCOL_STATUS (.+?)
+Value DESCRIPTION (.+?)
+
+Start
+  ^Line protocol current state :\s+${PROTOCOL_STATUS}\s*$$
+  ^Description:${DESCRIPTION}\s*$$

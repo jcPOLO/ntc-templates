@@ -294,6 +294,7 @@ hp_procurve_show_vlans.template, .*, hp_procurve, sh[[ow]] vl[[ans]]
 hp_procurve_show_arp.template, .*, hp_procurve, sh[[ow]] ar[[p]]
 
 huawei_display_port_vlan.template, .*, huawei, dis[[play]] port vl[[an]]
+huawei_display_interface.template, .*, huawei, dis[[play]] i[[nterfaces]]
 
 juniper_junos_show_chassis_cluster_interfaces.template, .*, juniper_junos, sh[[ow]] ch[[assis]] c[[luster]] i[[nterface]]
 juniper_junos_show_chassis_cluster_status.template, .*, juniper_junos, sh[[ow]] ch[[assis]] c[[luster]] s[[tatus]]
