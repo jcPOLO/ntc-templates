@@ -1,0 +1,11 @@
+Value PORT (\S+)
+Value MODE (\S+)
+Value ENCAPSULATION (802\.1q)
+Value STATUS (\S+)
+Value VLAN (\d+)
+
+Start
+  ^Port -> Begin
+
+Begin
+  ^(\s{0,9}${PORT})\s{0,9}${MODE}\s{0,20}${ENCAPSULATION}\s{0,20}${STATUS}\s{0,20}${VLAN}$$ -> Record
